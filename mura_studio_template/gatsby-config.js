@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Mura`,
+    title: `Mura studio`,
     description: `Architecture and interior design studio template.`,
     siteUrl: `https://github.com/foitpawel`,
     author: `@foitpawel`,
