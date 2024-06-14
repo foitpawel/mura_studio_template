@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-import Logo from "../images/logos/logo-dark.svg";
-import Button from "./button";
+import Logo from "../images/logos/mura_studio_logo.jpeg";
 
 const Header = () => {
   const navigation = [
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Our Work", href: "#works" },
+    { name: "O nas", href: "#about" },
+    { name: "Usługi", href: "#services" },
+    { name: "Portfolio", href: "#works" },
   ];
   return (
     <header>
@@ -34,7 +33,14 @@ const Header = () => {
                 </Link>
               ))}
             </div>
-            <Button label="CONTACT US" link="#" />
+            <Link
+             spy={true}
+             smooth={true}
+             duration={500}
+             className="text-body-sm font-medium text-neutral-700 hover:text-neutral-700 text-primary-600 px-4"
+             to={"#kontakt"}>
+              Contact us
+            </Link>
           </div>
         </div>
       </div>

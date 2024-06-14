@@ -13,10 +13,10 @@ const Services = () => {
         <div className="flex flex-col md:gap-20 gap-10 lg:py-28 md:py-20 py-12">
           <div className="grid lg:grid-cols-12 grid-cols-1 gap-8">
             <div className="lg:col-span-8">
-              <Eyebrow label="OUR SERVICES" />
+              <Eyebrow label="USŁUGI" />
               <h2 className="font-display md:text-display-xl text-display-md pt-5">
-                We provide the <span className="italic">best solutions</span>{" "}
-                for your dream home
+                Lorem ipsum dolor <span className="italic">sit amet</span>{" "}
+                consectetur adipiscing elit.
               </h2>
             </div>
           </div>

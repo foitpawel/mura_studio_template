@@ -4,7 +4,6 @@ import { getImage } from "gatsby-plugin-image";
 
 import WorkItem from "./workItem";
 import Eyebrow from "./eyebrow";
-import Button from "./button";
 
 const Works = () => {
   const data = useStaticQuery(graphql`
@@ -34,10 +33,9 @@ const Works = () => {
           <div className="grid xl:grid-cols-12 grid-cols-1 xl:gap-8 gap-10 items-center">
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10">
               <div className="flex flex-col gap-6">
-                <Eyebrow label="RECENT WORKS" />
+                <Eyebrow label="PORTFOLIO" />
                 <h3 className="font-display md:text-display-xl text-display-md font-normal pb-4">
-                  Some of <span className="italic">our crafts</span> made with
-                  love
+                Lorem ipsum <span className="italic">dolor</span> sit amet, consectetur
                 </h3>
               </div>
               {data.allWorksJson.nodes.slice(0, 1).map((node) => (
@@ -48,9 +46,6 @@ const Works = () => {
                   description={node.description}
                 />
               ))}
-              <div className="xl:flex hidden items-start">
-                <Button label="CONTACT US" link="/" size="lg" />
-              </div>
             </div>
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14">
               {data.allWorksJson.nodes.slice(1, 3).map((node) => (
@@ -62,9 +57,6 @@ const Works = () => {
                 />
               ))}
             </div>
-          </div>
-          <div className="xl:hidden flex items-start">
-            <Button label="CONTACT US" link="/" size="lg" />
           </div>
         </div>
       </div>

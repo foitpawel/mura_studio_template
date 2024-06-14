@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Inteo`,
-    description: `Award winning architecture and interior design studio template. Made by Landify.`,
-    siteUrl: `https://landify.design`, // Replace with your domain name
-    author: `@landifydesign`, // Replace with your twitter handle
+    title: `Mura`,
+    description: `Architecture and interior design studio template.`,
+    siteUrl: `https://github.com/foitpawel`,
+    author: `@foitpawel`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -35,7 +35,7 @@ module.exports = {
         background_color: `#7C3AED`,
         theme_color: `#7C3AED`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // Replace with your favicon (This path is relative to the root of the site)
+        icon: `src/images/favicon.jpeg`,
       },
     },
     {
