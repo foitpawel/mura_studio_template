@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-import Logo from "../images/logos/mura.jpeg";
+import Logo from "../images/logos/logo-dark.svg";
 import Button from "./button";
 
 const Header = () => {
