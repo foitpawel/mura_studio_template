@@ -39,7 +39,7 @@ const Header = () => {
              duration={500}
              className="text-body-sm font-medium text-neutral-700 hover:text-neutral-700 text-primary-600 px-4"
              to={"#kontakt"}>
-              Contact us
+              Kontakt
             </Link>
           </div>
         </div>

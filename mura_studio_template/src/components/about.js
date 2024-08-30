@@ -25,19 +25,18 @@ const About = () => {
           <div className="lg:col-span-6 flex flex-col gap-6">
             <Eyebrow label="O NAS" />
             <h2 className="font-display md:text-display-xl text-display-md pt-5">
-                Lorem ipsum dolor <span className="italic">sit amet</span>{" "}
-                consectetur adipiscing elit.
+                Mura studio zajmuje się  <span className="italic">projektowaniem obiektów</span>{" "} kubaturowych,
             </h2>
             <p className="md:text-body-lg text-body-md font-light text-neutral-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
-              fringilla dui amet faucibus nam. Erat id laoreet posuere etiam
-              morbi.
+              ale również aranżacją wnętrz oraz grafiką i tworzeniem multimediów.
+              Nie boimy się nowych wyzwań. Nasze projekty charakteryzują się
+              indywidualnym podejściem oraz dbałością o każdy szczegół.
             </p>
             <p className="md:text-body-lg text-body-md font-light text-neutral-700">
-              Tempor dolor elementum tellus non ipsum faucibus. Justo, magna
-              mauris posuere auctor justo. Habitant proin aliquet volutpat leo
-              ultricies. Dui blandit eget vitae turpis ultrices aliquet nunc.
-              Faucibus sit odio bibendum lobortis diam.
+              Najważniejszym etapem pracy jest poznanie potrzeb klienta i
+              konsekwentne budowanie projektu z troską zarówno o jego wartości
+              techniczne jak i estetyczne - materiał, światło, kolor.
+              Doświadczenie i ciągły rozwój to gwarancja unikalnego efektu naszej pracy.
             </p>
           </div>
           <div className="lg:col-span-6 flex flex-col gap-8 relative">

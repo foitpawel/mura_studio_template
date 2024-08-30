@@ -1,8 +1,14 @@
 import React from "react";
 
-import ArchitectureIcon from "../images/service-icons/interior-design.svg";
-import RenovationIcon from "../images/service-icons/building-renovation.svg";
-import ConstructionIcon from "../images/service-icons/construction.svg";
+import DomyJednorodzinne from "../images/service-icons/projektowanie_domow.svg";
+import Adaptacje from "../images/service-icons/adaptacje.svg";
+import Wielorodzinne from "../images/service-icons/wielorodzinne.svg";
+import Przebudowa from "../images/service-icons/przebudowa.svg";
+import Uslugowe from "../images/service-icons/uslugowe.svg";
+import ZmianaSposobu from "../images/service-icons/zmiana_sposobu.svg";
+import Elewacje from "../images/service-icons/elewacje.svg";
+import Wnetrza from "../images/service-icons/wnetrza.svg";
+import MalaArchitektura from "../images/service-icons/mala_architektura.svg";
 import Eyebrow from "./eyebrow";
 import ServiceItem from "./serviceItem";
 
@@ -20,22 +26,58 @@ const Services = () => {
               </h2>
             </div>
           </div>
-          <div className="flex lg:flex-row flex-col gap-8">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <ServiceItem
-              icon={ArchitectureIcon}
-              title="Architectural & Interior design"
+              icon={DomyJednorodzinne}
+              title="Projektowanie domów jednorodzinnych"
               description="Non diam pretium tristique augue placerat dolor. Accumsan nibh
                   nunc, molestie volutpat ipsum, ultricies."
             />
             <ServiceItem
-              icon={RenovationIcon}
-              title="Building Renovation"
+              icon={Adaptacje}
+              title="Adaptacje domów jednorodzinnych"
               description="Non diam pretium tristique augue placerat dolor. Accumsan nibh
                   nunc, molestie volutpat ipsum, ultricies."
             />
             <ServiceItem
-              icon={ConstructionIcon}
-              title="Construction Management"
+              icon={Przebudowa}
+              title="Przebudowa / rozbudowy budynków"
+              description="Non diam pretium tristique augue placerat dolor. Accumsan nibh
+                  nunc, molestie volutpat ipsum, ultricies."
+            />
+            <ServiceItem
+              icon={Wielorodzinne}
+              title="Budynki wielorodzinne"
+              description="Non diam pretium tristique augue placerat dolor. Accumsan nibh
+                  nunc, molestie volutpat ipsum, ultricies."
+            />
+            <ServiceItem
+              icon={Uslugowe}
+              title="Budynki usługowe"
+              description="Non diam pretium tristique augue placerat dolor. Accumsan nibh
+                  nunc, molestie volutpat ipsum, ultricies."
+            />
+            <ServiceItem
+              icon={ZmianaSposobu}
+              title="Zmiana sposobu uzytkowania"
+              description="Non diam pretium tristique augue placerat dolor. Accumsan nibh
+                  nunc, molestie volutpat ipsum, ultricies."
+            />
+            <ServiceItem
+              icon={Elewacje}
+              title="Projekty elewacji"
+              description="Non diam pretium tristique augue placerat dolor. Accumsan nibh
+                  nunc, molestie volutpat ipsum, ultricies."
+            />
+            <ServiceItem
+              icon={Wnetrza}
+              title="Projekty wnętrz"
+              description="Non diam pretium tristique augue placerat dolor. Accumsan nibh
+                  nunc, molestie volutpat ipsum, ultricies."
+            />
+            <ServiceItem
+              icon={MalaArchitektura}
+              title="Projekty małej architektury"
               description="Non diam pretium tristique augue placerat dolor. Accumsan nibh
                   nunc, molestie volutpat ipsum, ultricies."
             />

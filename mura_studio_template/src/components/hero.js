@@ -20,17 +20,6 @@ const Hero = () => {
   `);
   return (
     <div>
-      <div className="container mx-auto">
-        <div className="flex flex-col xl:px-32 items-center text-center gap-6 py-20">
-          <h1 className="font-display md:text-display-2xl text-display-lg">
-            {/* Make <span className="italic">your home</span> an ode to joy */}
-            Mura studio
-          </h1>
-          <p className="col-span-8 md:text-body-xl text-body-lg font-light text-neutral-700 max-w-[800px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi!{" "}
-          </p>
-        </div>
-      </div>
       <div className="relative">
         <GatsbyImage image={getImage(data.heroimage)} alt="Interior Design" />
         {/* pytanie, czy potrzeba */}
