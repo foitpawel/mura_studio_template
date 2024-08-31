@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="flex lg:flex-row flex-col lg:items-center md:gap-6 gap-4">
             <div className="flex flex-row items-center opacity-70">
               <p className="text-body-sm font-semibold tracking-widest text-neutral-700 pr-4">
-                CONNECT
+                MEDIA
               </p>
               <hr className="w-16 text-neutral-700"></hr>
             </div>
