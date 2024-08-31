@@ -1,16 +1,16 @@
 [
   {
-    "image": "../images/works/work-1.png",
+    "image": "../images/portfolio/projekt-1.png",
     "title": "Villa Furnishing & Interior",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
   },
   {
-    "image": "../images/works/work-2.png",
+    "image": "../images/portfolio/projekt-2.png",
     "title": "Luxury Hotel Renovation",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
   },
   {
-    "image": "../images/works/work-3.png",
+    "image": "../images/portfolio/projekt-3.png",
     "title": "Kids' Room Design",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
   }

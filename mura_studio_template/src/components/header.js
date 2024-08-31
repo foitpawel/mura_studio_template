@@ -12,7 +12,7 @@ const Header = () => {
   const navigation = [
     { name: "O nas", href: "#about" },
     { name: "Usługi", href: "#services" },
-    { name: "Portfolio", href: "#works" },
+    { name: "Portfolio", href: "#portfolio" },
   ];
 
   useEffect(() => {

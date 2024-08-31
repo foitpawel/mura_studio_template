@@ -7,7 +7,7 @@ import Kontakt from "../components/kontakt";
 import Metrics from "../components/metrics";
 import Services from "../components/services";
 import About from "../components/about";
-import Works from "../components/works";
+import Portfolio from "../components/portfolio";
 
 const IndexPage = () => (
   <Layout>
@@ -16,7 +16,7 @@ const IndexPage = () => (
     <About />
     {/* <Metrics /> */}
     <Services />
-    <Works />
+    <Portfolio />
     <Kontakt />
   </Layout>
 );
