@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-import previewImage from "../images/og-preview.jpg";
+import previewImage from "../images/OpenGl.png";
 
 function Seo({ lang, meta, title, description, image, url }) {
   const { site } = useStaticQuery(
