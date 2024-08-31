@@ -17,6 +17,7 @@ const Layout = ({ children }) => {
         <title>{title}</title>
         <script src="https://gumroad.com/js/gumroad.js" />
         <meta name="description" content={description} />
+        <meta property="fb:app_id" content="YOUR_APP_ID" /> //add app id
 
         <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
