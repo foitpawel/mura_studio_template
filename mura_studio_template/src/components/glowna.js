@@ -3,14 +3,13 @@ import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import CtaButton from "../images/cta-button.svg";
 import video from "../images/movie.mp4";
 
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Hero = () => {
-  const heroRef = useRef(null);
+const Glowna = () => {
+  const glownaRef = useRef(null);
 
   const data = useStaticQuery(graphql`
     {
@@ -33,14 +32,14 @@ const Hero = () => {
   
       let tl = gsap.timeline({
         scrollTrigger: {
-          trigger: heroRef.current,
+          trigger: glownaRef.current,
           start: "top",
           end: "bottom top",
           scrub: true,
         }
       });
       
-      tl.fromTo(heroRef.current, 
+      tl.fromTo(glownaRef.current, 
         { y: "0%", opacity: 1}, 
         { y: "-100%", opacity: 0}
       );
@@ -51,7 +50,7 @@ const Hero = () => {
 
   return (
     <div>
-      <div ref={heroRef} className="relative z-30">
+      <div ref={glownaRef} className="relative z-30">
       <video width="100%" height="100vh"  preload='auto' loop autoPlay muted>
         <source src={video} type="video/mp4" />
         Your browser does not support HTML5 video.
@@ -70,4 +69,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Glowna;

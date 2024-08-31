@@ -4,8 +4,8 @@ import { getImage } from "gatsby-plugin-image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import WorkItem from "./workItem";
-import Eyebrow from "./eyebrow";
+import PortfolioElement from "./portfolioElement";
+import Naglowek from "./naglowek";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,13 +64,13 @@ const Portfolio = () => {
           <div className="grid xl:grid-cols-12 grid-cols-1 xl:gap-8 gap-10 items-center">
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10">
               <div className="flex flex-col gap-6">
-                <Eyebrow label="PORTFOLIO" />
+                <Naglowek label="PORTFOLIO" />
                 <h3 className="font-display md:text-display-xl text-display-md font-normal pb-4">
                 Lorem ipsum <span className="italic">dolor</span> sit amet, consectetur
                 </h3>
               </div>
               {data.allWorksJson.nodes.slice(0, 1).map((node) => (
-                <WorkItem
+                <PortfolioElement
                   key={node.id}
                   image={getImage(node.image)}
                   title={node.title}
@@ -80,7 +80,7 @@ const Portfolio = () => {
             </div>
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14">
               {data.allWorksJson.nodes.slice(1, 3).map((node) => (
-                <WorkItem
+                <PortfolioElement
                   key={node.id}
                   image={getImage(node.image)}
                   title={node.title}

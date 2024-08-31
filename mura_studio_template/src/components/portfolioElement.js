@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const WorkItem = ({ image, title, description, direction = "left" }) => {
+const PortfolioElement = ({ image, title, description, direction = "left" }) => {
   const itemRef = useRef(null);
   const textRef = useRef(null);
   const imageRef = useRef(null);
@@ -77,11 +77,11 @@ const WorkItem = ({ image, title, description, direction = "left" }) => {
   );
 };
 
-WorkItem.propTypes = {
+PortfolioElement.propTypes = {
   image: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   direction: PropTypes.oneOf(["left", "right"]),
 };
 
-export default WorkItem;
+export default PortfolioElement;

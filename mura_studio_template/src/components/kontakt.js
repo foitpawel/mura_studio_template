@@ -1,23 +1,6 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import Eyebrow from "./eyebrow";
-
-const About = () => {
-  const data = useStaticQuery(graphql`
-    {
-      aboutimage: file(relativePath: { eq: "about-creative.png" }) {
-        childImageSharp {
-          gatsbyImageData(
-            width: 592
-            placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
-          )
-        }
-      }
-    }
-  `);
+const Kontakt = () => {
   return (
     <div id="#kontakt">
       <div className="container mx-auto">
@@ -69,4 +52,5 @@ const About = () => {
     </div>
   );
 };
-export default About;
+
+export default Kontakt;

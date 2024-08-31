@@ -1,21 +1,19 @@
 import React from "react";
 
-import Seo from "../components/seo";
-import Layout from "../components/layout";
-import Hero from "../components/hero";
+import Glowna from "../components/glowna";
 import Kontakt from "../components/kontakt";
-import Metrics from "../components/metrics";
-import Services from "../components/services";
-import About from "../components/about";
+import Layout from "../components/layout";
+import ONas from "../components/oNas";
 import Portfolio from "../components/portfolio";
+import Seo from "../components/seo";
+import Uslugi from "../components/uslugi";
 
 const IndexPage = () => (
   <Layout>
     <Seo />
-    <Hero />
-    <About />
-    {/* <Metrics /> */}
-    <Services />
+    <Glowna />
+    <ONas />
+    <Uslugi />
     <Portfolio />
     <Kontakt />
   </Layout>

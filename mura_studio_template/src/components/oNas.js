@@ -4,12 +4,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import Eyebrow from "./eyebrow";
+import Naglowek from "./naglowek";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const About = () => {
-  const aboutRef = useRef(null);
+const ONas = () => {
+  const oNasRef = useRef(null);
   const leftImageRef = useRef(null);
   const rightImageRef = useRef(null);
 
@@ -20,14 +20,14 @@ const About = () => {
   
       let tl = gsap.timeline({
         scrollTrigger: {
-          trigger: aboutRef.current,
+          trigger: oNasRef.current,
           start: "top",
           end: "bottom top",
           scrub: true,
         }
       });
       
-      tl.fromTo(aboutRef.current, 
+      tl.fromTo(oNasRef.current, 
         { y: "0%",}, 
         { y: "0%"}
       );
@@ -79,11 +79,11 @@ const About = () => {
   `);
 
   return (
-    <div id="#about" ref={aboutRef}>
+    <div id="#oNas" ref={oNasRef}>
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-20 lg:py-32 py-12 items-center">
           <div className="lg:col-span-6 flex flex-col gap-6">
-            <Eyebrow label="O NAS" />
+            <Naglowek label="O NAS" />
             <h2 className="font-display md:text-display-xl text-display-md pt-5">
                 Mura studio zajmuje się  <span className="italic">projektowaniem obiektów</span>{" "} kubaturowych,
             </h2>
@@ -122,4 +122,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default ONas;

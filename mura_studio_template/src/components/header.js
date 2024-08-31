@@ -10,8 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
 const Header = () => {
   const headerRef = useRef(null);
   const navigation = [
-    { name: "O nas", href: "#about" },
-    { name: "Usługi", href: "#services" },
+    { name: "O nas", href: "#oNas" },
+    { name: "Usługi", href: "#uslugi" },
     { name: "Portfolio", href: "#portfolio" },
   ];
 
