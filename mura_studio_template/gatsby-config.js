@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Mura studio`,
-    description: `Architecture and interior design studio template.`,
-    siteUrl: `https://github.com/foitpawel`,
+    description: `Projekty budynków i wnętrz`,
+    siteUrl: `https://murastudio.netlify.app/`,
     author: `@foitpawel`,
   },
   plugins: [
