@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import DomyJednorodzinne from "../images/service-icons/projektowanie_domow.svg";
 import Adaptacje from "../images/service-icons/adaptacje.svg";
@@ -12,10 +14,37 @@ import MalaArchitektura from "../images/service-icons/mala_architektura.svg";
 import Eyebrow from "./eyebrow";
 import ServiceItem from "./serviceItem";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Services = () => {
+  const serviceRef = useRef(null);
+
+  useEffect(() => {
+    let mm = gsap.matchMedia();
+  
+    mm.add("(min-width: 1024px)", () => {
+  
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: serviceRef.current,
+          start: "top",
+          end: "bottom top",
+          scrub: true,
+        }
+      });
+      
+      tl.fromTo(serviceRef.current, 
+        { y: "0%",}, 
+        { y: "0%"}
+      );
+    });
+  
+    return () => mm.revert();
+  }, []);
+
   return (
-    <div id="#services">
-      <div className="container mx-auto">
+    <div id="#services" ref={serviceRef}>
+      <div className="container mx-auto px-4">
         <div className="flex flex-col md:gap-20 gap-10 lg:py-28 md:py-20 py-12">
           <div className="grid lg:grid-cols-12 grid-cols-1 gap-8">
             <div className="lg:col-span-8">
@@ -26,7 +55,7 @@ const Services = () => {
               </h2>
             </div>
           </div>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ServiceItem
               icon={DomyJednorodzinne}
               title="Projektowanie domów jednorodzinnych"
