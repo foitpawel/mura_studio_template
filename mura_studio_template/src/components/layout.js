@@ -9,6 +9,9 @@ const Layout = ({ children }) => (
   <>
     <Helmet>
       <script src="https://gumroad.com/js/gumroad.js" />
+      <meta property="og:image" content={domain + "../images/OpenGl.png"} />
+      <meta property="og:image:width" content="400" />
+      <meta property="og:image:width" content="50" />
     </Helmet>
     <Header />
     <div>
