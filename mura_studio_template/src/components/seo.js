@@ -40,7 +40,7 @@ function Seo({ lang, meta, title, description, image, url }) {
         },
         {
           name: `keywords`,
-          content: `landing page, uikit, open source ui kit, landify ui kit, free uikit, figma uikit, aravinddesign, free website ui kit, free figma website ui kit, free landing page ui kit, landing page ui kit for figma, website ui kit for figma`,
+          content: `design, architecture, interior, interior design, buildings, project, visualizations, architektura, wnetrza, projekty wnetrz, budynki jednorodzinne, projekt przebudowy, przebudowa,`,
         },
         {
           property: `og:image`,
