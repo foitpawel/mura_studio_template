@@ -1,11 +1,16 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import WorkItem from "./workItem";
 import Eyebrow from "./eyebrow";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Works = () => {
+  const worksRef = useRef(null);
   const data = useStaticQuery(graphql`
     {
       allWorksJson {
@@ -26,8 +31,34 @@ const Works = () => {
       }
     }
   `);
+
+  // useEffect(() => {
+  //   let mm = gsap.matchMedia();
+  
+  //   mm.add("(min-width: 1024px)", () => {
+  
+  //     let tl = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: worksRef.current,
+  //         start: "top 300%",
+  //         end: "top 100%",
+  //         scrub: true,
+  //         // markers: true
+  //       }
+  //     });
+      
+  //     tl.fromTo(worksRef.current, 
+  //       { y: "0%",}, 
+  //       { y: "-300%"}
+  //     );
+  //   });
+  
+  //   return () => mm.revert();
+  // }, []);
+
+
   return (
-    <div id="#works">
+    <div id="#works" ref={worksRef}>
       <div className="container mx-auto">
         <div className="flex flex-col gap-12 lg:py-28 md:py-24 py-12">
           <div className="grid xl:grid-cols-12 grid-cols-1 xl:gap-8 gap-10 items-center">
@@ -54,6 +85,7 @@ const Works = () => {
                   image={getImage(node.image)}
                   title={node.title}
                   description={node.description}
+                  direction="right"
                 />
               ))}
             </div>
