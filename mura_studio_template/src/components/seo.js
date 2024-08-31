@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-import previewImage from "../images/OpenGl.png";
+const previewImage = "https://murastudio.netlify.app/static/OpenGl-06ed6f16cdf48a64b1f791940ee1b9cc.png";
 
 function Seo({ lang, meta, title, description, image, url }) {
   const { site } = useStaticQuery(
@@ -21,11 +21,11 @@ function Seo({ lang, meta, title, description, image, url }) {
     `
   );
 
-  const siteTitle = title || site.siteMetadata.title;
+  const siteTitle = title || site.siteMetadata.title || "Mura studio";
   const metaDescription = description || site.siteMetadata.description;
   const siteUrl = site.siteMetadata.siteUrl;
   const ogImage = image || previewImage;
-  const ogUrl = `/${url}` || "";
+  const ogUrl = url ? `${siteUrl}/${url}` : siteUrl;
 
   return (
     <Helmet
@@ -44,7 +44,7 @@ function Seo({ lang, meta, title, description, image, url }) {
         },
         {
           property: `og:image`,
-          content: `${siteUrl}${ogImage}`,
+          content: ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage}`,
         },
         {
           property: `og:title`,
@@ -60,7 +60,7 @@ function Seo({ lang, meta, title, description, image, url }) {
         },
         {
           property: `og:url`,
-          content: `${siteUrl}${ogUrl}`,
+          content: ogUrl,
         },
         {
           name: `twitter:card`,
@@ -72,17 +72,17 @@ function Seo({ lang, meta, title, description, image, url }) {
         },
         {
           name: `twitter:image`,
-          content: `${siteUrl}${ogImage}`,
+          content: ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage}`,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: title || siteTitle,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ].filter(item => item.content)}
     />
   );
 }
