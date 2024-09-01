@@ -15,12 +15,12 @@ const PortfolioElement = ({ image, title, description, direction = "left" }) => 
     let mm = gsap.matchMedia();
 
     mm.add("(min-width: 1024px)", () => {
-      const xStart = direction === "left" ? "-100%" : "100%";
+      const xStart = direction === "left" ? "0%" : "0%";
 
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: itemRef.current,
-          start: direction === "left" ? "top 80%" : "top 60%",
+          start: direction === "left" ? "top 60%" : "top 60%",
           end: "top 20%",
           scrub: true,
         },
@@ -64,7 +64,7 @@ const PortfolioElement = ({ image, title, description, direction = "left" }) => 
 
   return (
     <div ref={itemRef} className="flex basis-1/2 flex-col overflow-hidden z-100">
-      <div ref={imageRef}>
+      <div ref={imageRef} className="md:mx-auto">
         <GatsbyImage image={image} alt={title} />
       </div>
       <div ref={textRef} className="flex flex-col self-stretch pt-6">
