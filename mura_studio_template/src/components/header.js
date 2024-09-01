@@ -7,12 +7,12 @@ import Logo from "../images/logos/mura_studio_logo.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const useClickOutside = (handler) => {
+const useClickOutside = handler => {
   const domNode = useRef();
 
   useEffect(() => {
     const closeDropdown = (evt) => {
-      if (domNode.current && !domNode.current.contains(evt.target)) {
+      if (!domNode.current.contains(evt.target) && !evt.target.closest("#nav-icon")) {
         handler();
       }
     };
@@ -107,9 +107,9 @@ const Header = () => {
               className={`lg:hidden relative w-8 h-6 cursor-pointer z-50 ${isMenuOpen ? "open" : ""}`}
               onClick={toggleMenu}
             >
-              <span className={`block absolute left-0 w-full h-1 ${isMenuOpen ? 'bg-neutral-700' : 'bg-primary-600'} transition-all duration-300 ease-in-out transform ${isMenuOpen ? 'rotate-45 top-[9px]' : 'top-0'}`} />
-              <span className={`block absolute left-0 w-full h-1 bg-primary-600 transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-0' : 'top-[9px]'}`} />
-              <span className={`block absolute left-0 w-full h-1 ${isMenuOpen ? 'bg-neutral-700' : 'bg-primary-600'} transition-all duration-300 ease-in-out transform ${isMenuOpen ? '-rotate-45 top-[9px]' : 'top-[18px]'}`} />
+              <span className={`block absolute left-0 w-full h-0.5 ${isMenuOpen ? 'bg-neutral-700' : 'bg-primary-600'} transition-all duration-300 ease-in-out transform ${isMenuOpen ? 'rotate-45 top-[9px]' : 'top-0'}`} />
+              <span className={`block absolute left-0 w-full h-0.5 bg-primary-600 transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-0' : 'top-[9px]'}`} />
+              <span className={`block absolute left-0 w-full h-0.5 ${isMenuOpen ? 'bg-neutral-700' : 'bg-primary-600'} transition-all duration-300 ease-in-out transform ${isMenuOpen ? '-rotate-45 top-[9px]' : 'top-[18px]'}`} />
             </div>
           </div>
         </div>
