@@ -21,9 +21,6 @@ const Kontakt = () => {
               <p className="text-display-xs font-display font-normal">
                 44-144 Żernica,<br/>ul. Brzozowa
               </p>
-              {/* <p className="text-body-sm font-light text-neutral-900">
-                44-144 Żernica, ul. Brzozowa
-              </p> */}
             </div>
             <div className="flex flex-col gap-2">
               <p className="text-body-sm font-light text-neutral-900">
