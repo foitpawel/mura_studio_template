@@ -81,10 +81,10 @@ const ONas = () => {
   return (
     <div id="#oNas" ref={oNasRef}>
       <div className="container mx-auto">
-        <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-20 lg:py-32 py-12 items-center">
+        <div className="grid lg:grid-cols-12 mt-10 grid-cols-1 lg:gap-8 gap-20 lg:py-32 py-12 items-center">
           <div className="lg:col-span-6 flex flex-col gap-6">
             <Naglowek label="O NAS" />
-            <h2 className="font-display md:text-display-xl text-display-md pt-5">
+            <h2 className="font-display md:text-display-xl text-display-md">
                 Mura studio zajmuje się  <span className="italic">projektowaniem obiektów</span>{" "} kubaturowych,
             </h2>
             <p className="md:text-body-lg text-body-md font-light text-neutral-700">
