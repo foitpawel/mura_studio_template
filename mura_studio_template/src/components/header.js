@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-scroll";
 
-import Logo from "../images/logos/mura_studio_logo.jpeg";
+import Logo from "../images/logos/mura_studio_logo.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -55,7 +55,7 @@ const Header = () => {
       tl.fromTo(
         headerRef.current,
         { y: "0", opacity: 1 },
-        { y: "100%", opacity: 0.5 }
+        { y: "50%", opacity: 0 }
       );
     });
 

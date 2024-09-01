@@ -40,16 +40,16 @@ const Portfolio = () => {
   //     let tl = gsap.timeline({
   //       scrollTrigger: {
   //         trigger: portfolioRef.current,
-  //         start: "top 300%",
-  //         end: "top 100%",
+  //         start: "top 100%",
+  //         end: "bottom 150%",
   //         scrub: true,
-  //         // markers: true
+  //         markers: true
   //       }
   //     });
       
   //     tl.fromTo(portfolioRef.current, 
   //       { y: "0%",}, 
-  //       { y: "-300%"}
+  //       { y: "-40%"}
   //     );
   //   });
   
