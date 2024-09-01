@@ -3,7 +3,7 @@ module.exports = {
     title: `Mura studio`,
     description: `Projekty budynków i wnętrz`,
     siteUrl: `https://murastudio.netlify.app/`,
-    author: `@foitpawel`,
+    author: `@pawelfoit`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
