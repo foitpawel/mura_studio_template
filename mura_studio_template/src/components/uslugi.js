@@ -19,28 +19,28 @@ gsap.registerPlugin(ScrollTrigger);
 const Uslugi = () => {
   const serviceRef = useRef(null);
 
-  useEffect(() => {
-    let mm = gsap.matchMedia();
+  // useEffect(() => {
+  //   let mm = gsap.matchMedia();
   
-    mm.add("(min-width: 1024px)", () => {
+  //   mm.add("(min-width: 1024px)", () => {
   
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: serviceRef.current,
-          start: "top",
-          end: "bottom top",
-          scrub: true,
-        }
-      });
+  //     let tl = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: serviceRef.current,
+  //         start: "top 40%",
+  //         end: "bottom 90%",
+  //         scrub: true,
+  //       }
+  //     });
       
-      tl.fromTo(serviceRef.current, 
-        { y: "0%",}, 
-        { y: "0%"}
-      );
-    });
+  //     tl.fromTo(serviceRef.current, 
+  //       { y: "0%",}, 
+  //       { y: "-20%"}
+  //     );
+  //   });
   
-    return () => mm.revert();
-  }, []);
+  //   return () => mm.revert();
+  // }, []);
 
   return (
     <div id="#uslugi" ref={serviceRef}>
