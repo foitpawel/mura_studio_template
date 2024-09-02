@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
+import Karuzela from "./karuzela";
 import Naglowek from "./naglowek";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -99,24 +100,21 @@ const ONas = () => {
               Doświadczenie i ciągły rozwój to gwarancja unikalnego efektu naszej pracy.
             </p>
           </div>
-          {/* <div className="lg:col-span-6 flex flex-col gap-8 relative"> */}
-            {/* <GatsbyImage
-              className="h-full transform translate-y-full transition-transform duration-3000"
-              image={getImage(data.aboutimage)}
-              alt="Interior Design"
-            /> */}
-            <div className="lg:col-span-6 flex flex-col gap-8 relative">
-              <div className="flex justify-between">
-                <div ref={leftImageRef} className="w-1/2">
-                  <GatsbyImage className="h-full transform transition-transform" image={getImage(data.lewy)} alt="Interior Design" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }} />
-                </div>
-                <div ref={rightImageRef} className="w-1/2">
-                  <GatsbyImage className="h-full transform transition-transform" image={getImage(data.prawy)} alt="Interior Design" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }} />
-                </div>
-            </div>
-          {/* </div> */}
+          <div className="lg:col-span-6 flex flex-col gap-8 relative">
+            <div className="flex justify-between">
+              <div ref={leftImageRef} className="w-1/2">
+                <GatsbyImage className="h-full transform transition-transform" image={getImage(data.lewy)} alt="Interior Design" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }} />
+              </div>
+              <div ref={rightImageRef} className="w-1/2">
+                <GatsbyImage className="h-full transform transition-transform" image={getImage(data.prawy)} alt="Interior Design" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }} />
+              </div>
+          </div>
           </div>
         </div>
+        <p className="md:text-body-lg text-body-md font-light text-neutral-700">
+            Współpracujemy z następującymi...
+        </p>
+        <Karuzela />
       </div>
     </div>
   );
