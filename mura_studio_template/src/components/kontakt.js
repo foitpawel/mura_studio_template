@@ -34,7 +34,7 @@ const Kontakt = () => {
             <div className="lg:col-span-6 mt-2 flex flex-col gap-8 xl:pl-80 lg:pl-48">
               <div className="flex flex-col gap-2">
                 <p className="text-display-xs font-display font-normal">
-                  44-144 Żernica,<br/>ul. Brzozowa
+                  44-144 Żernica,<br/>ul. Brzozowa 3a
                 </p>
               </div>
               <div className="flex flex-col gap-2">
