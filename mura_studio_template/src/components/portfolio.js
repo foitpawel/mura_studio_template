@@ -69,24 +69,28 @@ const Portfolio = () => {
                 Lorem ipsum <span className="italic">dolor</span> sit amet, consectetur
                 </h3>
               </div>
-              {data.allWorksJson.nodes.slice(0, 1).map((node) => (
-                <PortfolioElement
-                  key={node.id}
-                  image={getImage(node.image)}
-                  title={node.title}
-                  description={node.description}
-                />
+              {data.allWorksJson.nodes
+                .filter((_, idx) => [0,3,6].includes(idx))
+                .map((node) => (
+                  <PortfolioElement
+                    key={node.id}
+                    image={getImage(node.image)}
+                    title={node.title}
+                    description={node.description}
+                  />
               ))}
             </div>
-            <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14">
-              {data.allWorksJson.nodes.slice(1, 3).map((node) => (
-                <PortfolioElement
-                  key={node.id}
-                  image={getImage(node.image)}
-                  title={node.title}
-                  description={node.description}
-                  direction="right"
-                />
+            <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10">
+              {data.allWorksJson.nodes
+                .filter((_, idx) => [1,2,4,5].includes(idx))
+                .map((node) => (
+                  <PortfolioElement
+                    key={node.id}
+                    image={getImage(node.image)}
+                    title={node.title}
+                    description={node.description}
+                    direction="right"
+                  />
               ))}
             </div>
           </div>

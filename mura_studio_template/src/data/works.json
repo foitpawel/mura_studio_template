@@ -13,5 +13,25 @@
     "image": "../images/portfolio/projekt-3.png",
     "title": "Kids' Room Design",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
+  },
+  {
+    "image": "../images/portfolio/projekt-4.jpg",
+    "title": "Kids' Room Design",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
+  },
+  {
+    "image": "../images/portfolio/projekt-5.jpg",
+    "title": "Kids' Room Design",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
+  },
+  {
+    "image": "../images/portfolio/projekt-6.png",
+    "title": "Kids' Room Design",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
+  },
+  {
+    "image": "../images/portfolio/projekt-7.jpg",
+    "title": "Kids' Room Design",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
   }
 ]
