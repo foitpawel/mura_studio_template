@@ -75,8 +75,6 @@ const Portfolio = () => {
                   <PortfolioElement
                     key={node.id}
                     image={getImage(node.image)}
-                    title={node.title}
-                    description={node.description}
                   />
               ))}
             </div>

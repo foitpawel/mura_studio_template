@@ -6,22 +6,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const PortfolioElement = ({ image, title, description, direction = "left" }) => {
+const PortfolioElement = ({ image, title}) => {
   const itemRef = useRef(null);
-  const textRef = useRef(null);
   const imageRef = useRef(null);
 
   useEffect(() => {
     let mm = gsap.matchMedia();
 
     mm.add("(min-width: 1024px)", () => {
-      const xStart = direction === "left" ? "0%" : "0%";
-
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: itemRef.current,
-          start: direction === "left" ? "top 60%" : "top 60%",
-          end: "top 20%",
+          start: "top 100%",
+          end: "top 40%",
           scrub: true,
         },
       });
@@ -29,49 +26,24 @@ const PortfolioElement = ({ image, title, description, direction = "left" }) => 
       tl.fromTo(
         imageRef.current,
         {
-          x: xStart,
-          y: direction === "left" ? '150%' : '150%',
+          y: "200%",
           opacity: 0, 
         },
         {
-          x: "0%",
-          y: direction === "left" ? '0%' : '0%',
+          y: "0%",
           opacity: 1,
           duration: 1,
         }
       );
-
-      tl.fromTo(
-        textRef.current,
-        {
-          x: xStart,
-          opacity: 0,
-          y: direction === "left" ? '50%' : '50%',
-
-        },
-        {
-          x: "0%",
-          opacity: 1,
-          y: direction === "left" ? '0%' : '0%',
-          duration: 1,
-        },
-        "-=0.5"
-      );
     });
 
     return () => mm.revert();
-  }, [direction]);
+  }, []);
 
   return (
     <div ref={itemRef} className="flex basis-1/2 flex-col overflow-hidden z-100">
       <div ref={imageRef} className="md:mx-auto">
         <GatsbyImage image={image} alt={title} />
-      </div>
-      <div ref={textRef} className="flex flex-col self-stretch pt-6">
-        <h3 className="font-display text-display-md pb-4">{title}</h3>
-        <p className="text-body-lg font-light text-neutral-700">
-          {description}
-        </p>
       </div>
     </div>
   );
