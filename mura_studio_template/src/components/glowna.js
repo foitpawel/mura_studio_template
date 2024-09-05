@@ -28,7 +28,7 @@ const Glowna = () => {
   useEffect(() => {
     let mm = gsap.matchMedia();
   
-    mm.add("(min-width: 1024px)", () => {
+    mm.add("(min-width: 320px)", () => {
   
       let tl = gsap.timeline({
         scrollTrigger: {
