@@ -19,43 +19,86 @@ gsap.registerPlugin(ScrollTrigger);
 const Uslugi = () => {
   const serviceRef = useRef(null);
 
-  // useEffect(() => {
-  //   let mm = gsap.matchMedia();
+  useEffect(() => {
+    let mm = gsap.matchMedia();
   
-  //   mm.add("(min-width: 1024px)", () => {
+    mm.add("(min-width: 324px)", () => {
   
-  //     let tl = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: serviceRef.current,
-  //         start: "top 40%",
-  //         end: "bottom 90%",
-  //         scrub: true,
-  //       }
-  //     });
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: serviceRef.current,
+          start: "top",
+          end: "bottom 120%",
+          scrub: true,
+        }
+      });
       
-  //     tl.fromTo(serviceRef.current, 
-  //       { y: "0%",}, 
-  //       { y: "-20%"}
-  //     );
-  //   });
+      tl.fromTo(serviceRef.current, 
+        { y: "0%",}, 
+        { y: "0%"}
+      );
+    });
   
-  //   return () => mm.revert();
-  // }, []);
+    return () => mm.revert();
+  }, []);
+
+
+  useEffect(() => {
+    let mm = gsap.matchMedia();
+  
+    mm.add("(min-width: 324px)", () => {
+  
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: serviceRef.current,
+          start: "bottom 30%",
+          end: "bottom 10%",
+          scrub: true,
+        }
+      });
+      
+      tl.fromTo(
+        serviceRef.current,
+        {
+          y: "0%",
+          opacity: 1, 
+        },
+        {
+          y: "-10%",
+          opacity: 0,
+          duration: 1,
+        }
+      );
+    });
+  
+    return () => mm.revert();
+  }, []);
+
+  
 
   return (
     <div id="#uslugi" ref={serviceRef}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="flex flex-col md:gap-20 gap-10 lg:py-28 md:py-20 py-12">
           <div className="grid lg:grid-cols-12 grid-cols-1 gap-8">
-            <div className="lg:col-span-8">
+            <div className="lg:col-span-10">
               <Naglowek label="USŁUGI" />
-              <h2 className="font-display md:text-display-xl text-display-md pt-5">
-                Lorem ipsum dolor <span className="italic">sit amet</span>{" "}
-                consectetur adipiscing elit.
+              <h2 className="font-display xl:text-display-lg text-display-md pt-5">
+                Naszą misją jest {" "}<span className="italic">tworzenie kompleksowych projektów </span>
               </h2>
+              <div className="mt-5">
+                <a className="font-display text-neutral-700 md:text-display-xxs text-display-xs">
+                  z zakresu architektury kubaturowej oraz wnętrz, które spełnią oczekiwania nawet najbardziej wymagających inwestorów.
+                </a>
+              </div>
+              <div className="mt-5">
+                <a className="font-display text-neutral-700 md:text-display-xxs text-display-xs">
+                  W skład zakresu naszych usług wchodzą:
+                </a>
+              </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:w-3/4 md:w-3/4 w-3/4 justify-center mx-auto">
             <Usluga
               icon={DomyJednorodzinne}
               title="Projektowanie domów jednorodzinnych"

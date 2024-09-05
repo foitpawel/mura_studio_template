@@ -41,7 +41,7 @@ const Glowna = () => {
       
       tl.fromTo(glownaRef.current, 
         { y: "0%", opacity: 1}, 
-        { y: "-100%", opacity: 0}
+        { y: "-60%", opacity: 0}//
       );
     });
   

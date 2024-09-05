@@ -13,12 +13,12 @@ const PortfolioElement = ({ image, title}) => {
   useEffect(() => {
     let mm = gsap.matchMedia();
 
-    mm.add("(min-width: 1024px)", () => {
+    mm.add("(min-width: 324px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: itemRef.current,
           start: "top 100%",
-          end: "top 40%",
+          end: "top 80%",
           scrub: true,
         },
       });
@@ -51,8 +51,6 @@ const PortfolioElement = ({ image, title}) => {
 
 PortfolioElement.propTypes = {
   image: PropTypes.object.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
   direction: PropTypes.oneOf(["left", "right"]),
 };
 

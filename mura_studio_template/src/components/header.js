@@ -42,12 +42,12 @@ const Header = () => {
   useEffect(() => {
     let mm = gsap.matchMedia();
 
-    mm.add("(min-width: 1024px)", () => {
+    mm.add("(min-width: 324px)", () => {
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: headerRef.current,
           start: "top top",
-          end: "bottom+=70 top",
+          end: "bottom+=130 top",
           scrub: true,
         },
       });
@@ -55,7 +55,7 @@ const Header = () => {
       tl.fromTo(
         headerRef.current,
         { y: "0", opacity: 1 },
-        { y: "50%", opacity: 0 }
+        { y: "-100%", opacity: 0 }
       );
     });
 

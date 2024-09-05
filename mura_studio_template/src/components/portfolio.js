@@ -32,29 +32,36 @@ const Portfolio = () => {
     }
   `);
 
-  // useEffect(() => {
-  //   let mm = gsap.matchMedia();
+  useEffect(() => {
+    let mm = gsap.matchMedia();
   
-  //   mm.add("(min-width: 1024px)", () => {
+    mm.add("(min-width: 324px)", () => {
   
-  //     let tl = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: portfolioRef.current,
-  //         start: "top 100%",
-  //         end: "bottom 150%",
-  //         scrub: true,
-  //         markers: true
-  //       }
-  //     });
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: portfolioRef.current,
+          start: "bottom 60%",
+          end: "bottom 40%",
+          scrub: true,
+        }
+      });
       
-  //     tl.fromTo(portfolioRef.current, 
-  //       { y: "0%",}, 
-  //       { y: "-40%"}
-  //     );
-  //   });
+      tl.fromTo(
+        portfolioRef.current,
+        {
+          y: "0%",
+          opacity: 1, 
+        },
+        {
+          y: "-10%",
+          opacity: 0,
+          duration: 1,
+        }
+      );
+    });
   
-  //   return () => mm.revert();
-  // }, []);
+    return () => mm.revert();
+  }, []);
 
 
   return (
@@ -65,8 +72,8 @@ const Portfolio = () => {
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10">
               <div className="flex flex-col gap-6">
                 <Naglowek label="PORTFOLIO" />
-                <h3 className="font-display md:text-display-xl text-display-md font-normal pb-4">
-                Lorem ipsum <span className="italic">dolor</span> sit amet, consectetur
+                <h3 className="font-display md:text-display-lg text-display-md font-normal pb-4">
+                  Zapraszamy <span className="italic">do zapoznania</span> się z naszymi wcześniejszymi pracami
                 </h3>
               </div>
               {data.allWorksJson.nodes
@@ -74,6 +81,7 @@ const Portfolio = () => {
                 .map((node) => (
                   <PortfolioElement
                     key={node.id}
+                    title={node.title}
                     image={getImage(node.image)}
                   />
               ))}

@@ -5,7 +5,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 const Karuzela = () => {
   const containerRef = useRef(null);
 
-  // Poprawione zapytanie GraphQL z odpowiednią ścieżką do obrazu
   const data = useStaticQuery(graphql`
     {
       image: file(relativePath: { eq: "logos/mura.jpeg" }) {
@@ -22,7 +21,7 @@ const Karuzela = () => {
 
   useEffect(() => {
     const container = containerRef.current;
-    const scrollSpeed = 1; // Szybkość przewijania
+    const scrollSpeed = 1;
     let startPosition = 0;
 
     const scroll = () => {
@@ -42,11 +41,8 @@ const Karuzela = () => {
   return (
     <div className="flex flex-col md:gap-20 gap-10">
       <div className="relative overflow-hidden h-[200px] bg-white">
-        {/* Maskowanie gradientem */}
         <div className="absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
         <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
-
-        {/* Kontener dla logo */}
         <div
           ref={containerRef}
           className="flex w-[200%] animate-marquee"
@@ -57,7 +53,6 @@ const Karuzela = () => {
             <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 3" />
             <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 4" />
           </div>
-          {/* Powtórzenie logo dla nieskończonego efektu */}
           <div className="flex w-[50%]">
             <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 5" />
             <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 6" />
