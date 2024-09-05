@@ -122,7 +122,7 @@ const ONas = () => {
   return (
     <div id="#oNas" ref={oNasRef}>
       <div className="container mx-auto">
-        <div className="grid lg:grid-cols-12 mt-10 grid-cols-1 lg:gap-8 gap-20 items-center">
+        <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-20 items-center lg:pt-28 md:pt-24 pt-12">
           <div className="lg:col-span-6 flex flex-col gap-6">
             <Naglowek label="O NAS" />
             <h2 className="font-display xl:text-display-lg text-display-md">

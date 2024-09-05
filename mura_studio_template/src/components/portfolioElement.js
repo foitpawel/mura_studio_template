@@ -13,12 +13,12 @@ const PortfolioElement = ({ image, title}) => {
   useEffect(() => {
     let mm = gsap.matchMedia();
 
-    mm.add("(min-width: 324px)", () => {
+    mm.add("(min-width: 320px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: itemRef.current,
           start: "top 100%",
-          end: "top 80%",
+          end: "top 50%",
           scrub: true,
         },
       });
@@ -26,7 +26,7 @@ const PortfolioElement = ({ image, title}) => {
       tl.fromTo(
         imageRef.current,
         {
-          y: "200%",
+          y: "80%",
           opacity: 0, 
         },
         {

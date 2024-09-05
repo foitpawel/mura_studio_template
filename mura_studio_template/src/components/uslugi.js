@@ -79,7 +79,7 @@ const Uslugi = () => {
   return (
     <div id="#uslugi" ref={serviceRef}>
       <div className="container mx-auto">
-        <div className="flex flex-col md:gap-20 gap-10 lg:py-28 md:py-20 py-12">
+        <div className="flex flex-col md:gap-20 gap-10 lg:pt-28 md:pt-24 pt-12">
           <div className="grid lg:grid-cols-12 grid-cols-1 gap-8">
             <div className="lg:col-span-10">
               <Naglowek label="USŁUGI" />

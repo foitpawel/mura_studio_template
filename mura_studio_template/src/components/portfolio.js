@@ -41,7 +41,7 @@ const Portfolio = () => {
         scrollTrigger: {
           trigger: portfolioRef.current,
           start: "bottom 60%",
-          end: "bottom 40%",
+          end: "bottom 30%",
           scrub: true,
         }
       });
@@ -55,7 +55,6 @@ const Portfolio = () => {
         {
           y: "-10%",
           opacity: 0,
-          duration: 1,
         }
       );
     });
