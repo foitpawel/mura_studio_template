@@ -9,7 +9,7 @@ const Usluga = ({ icon, title }) => {
           <img src={icon} width={48} height={48} alt={title} />
         </div>
         <div className="flex flex-col gap-4 text-center">
-          <p className="font-display md:text-display-md text-display-sm font-normal">
+          <p className="font-display text-neutral-700 md:text-display-xxs text-display-xxs font-normal">
             {title}
           </p>
         </div>
