@@ -122,25 +122,25 @@ const ONas = () => {
   return (
     <div id="#oNas" ref={oNasRef}>
       <div className="container mx-auto">
-        <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-20 items-center lg:pt-28 md:pt-24 pt-12">
+        <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-20 items-center pt-10">
           <div className="lg:col-span-6 flex flex-col gap-6">
             <Naglowek label="O NAS" />
             <h2 className="font-display xl:text-display-lg text-display-md">
                 Mura studio zajmuje się  <span className="italic">projektowaniem obiektów</span>{" "} kubaturowych,
             </h2>
-            <p className="font-body md:text-body-lg text-body-md font-light text-neutral-700">
+            <p className="font-body text-body-lg font-light text-neutral-700">
               ale również aranżacją wnętrz oraz grafiką i tworzeniem multimediów.
               Nie boimy się nowych wyzwań. Nasze projekty charakteryzują się
               indywidualnym podejściem oraz dbałością o każdy szczegół.
             </p>
-            <p className="font-body md:text-body-lg text-body-md font-light text-neutral-700">
+            <p className="font-body text-body-lg font-light text-neutral-700">
               Najważniejszym etapem pracy jest poznanie potrzeb klienta i
               konsekwentne budowanie projektu z troską zarówno o jego wartości
               techniczne jak i estetyczne - materiał, światło, kolor.
               Doświadczenie i ciągły rozwój to gwarancja unikalnego efektu naszej pracy.
             </p>
           </div>
-          <div className="lg:col-span-6 flex flex-col gap-8 relative">
+          <div className="lg:col-span-6 flex flex-col gap-8 relative  mx-auto mb-10">
             <div className="flex justify-between">
               <div ref={leftImageRef} className="w-1/2">
                 <GatsbyImage className="h-full transform transition-transform" image={getImage(data.lewy)} alt="Interior Design" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }} />
@@ -151,7 +151,7 @@ const ONas = () => {
           </div>
           </div>
         </div>
-        <p className="md:text-body-lg text-center text-body-md font-light text-neutral-700 mt-5">
+        <p className="font-body text-body-lg text-center font-light text-neutral-700 mt-5">
           Przy realizacji inwestycji budowlanych współpracujemy ze stałym zespółem zaufanych branżystów z zakresu instalacji sanitarnych, instalacji elektrycznych oraz konstrukcji. Dzięki temu jesteśmy w stanie dostarczyć Państwu projekty wielobranżowe na wysokim poziomie dopracowania.
         </p>
         <Karuzela />
