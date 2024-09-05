@@ -57,33 +57,33 @@ const Kontakt = () => {
         </div>
         <div className="lg:col-span-6 mt-2 flex flex-col gap-8 xl:pl-80 lg:pl-48">
           <div
-            className={`flex flex-col gap-2 transition-all duration-500 transform ${
+            className={`flex flex-col gap-2 mt-10 transition-all duration-500 transform ${
               hasAnimated ? "translate-x-0 opacity-100 delay-200" : "translate-x-full opacity-0"
             }`}
           >
-            <p className="text-display-xs font-display font-normal">
+            <p className="text-display-xs font-display font-normal text-neutral-700">
               44-144 Żernica,<br />ul. Brzozowa 3a
             </p>
           </div>
             <div
-              className={`flex flex-col gap-2 transition-all duration-500 transform ${
+              className={`flex flex-col gap-2 mt-2 transition-all duration-500 transform ${
                 hasAnimated ? "translate-x-0 opacity-100 delay-300" : "translate-x-full opacity-0"
               }`}
             >
             <a
-              className="text-display-xs font-display font-normal text-primary-600"
+              className="text-display-xs font-display font-normal text-primary-600 hover:text-neutral-700"
               href="mailto:biuro@murastudio.pl"
             >
               biuro@murastudio.pl
             </a>
           </div>
           <div
-            className={`flex flex-col gap-2 transition-all duration-500 transform ${
+            className={`flex flex-col gap-2 mt-2 transition-all duration-500 transform ${
               hasAnimated ? "translate-x-0 opacity-100 delay-500" : "translate-x-full opacity-0"
             }`}
           >
             <a
-              className="text-display-xs font-display font-normal text-primary-600"
+              className="text-display-xs font-display font-normal text-primary-600 hover:text-neutral-700"
               href="tel:+48795504238"
             >
               +48 795 504 238
@@ -94,13 +94,7 @@ const Kontakt = () => {
               hasAnimated ? "translate-x-0 opacity-100 delay-700" : "translate-x-full opacity-0"
             }`
           }>
-            <div className="flex flex-row items-center opacity-70">
-              <p className="text-body-sm font-semibold tracking-widest text-neutral-700 pr-4">
-                MEDIA
-              </p>
-              <hr className="w-16 text-neutral-700" />
-            </div>
-            <div className="flex flex-row items-center gap-6">
+            <div className="flex flex-row items-center gap-6 mt-5">
               {data.allSocialJson.nodes.map((node) => (
                 <a
                   href={node.href}
