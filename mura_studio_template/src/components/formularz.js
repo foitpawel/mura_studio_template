@@ -9,6 +9,7 @@ const Formularz = () => {
       netlify-honeypot="bot-field"
       data-netlify="true"
       name="contact"
+      action="/successScreen/"
       className="flex flex-col grid gap-2"
     >
       <input type="hidden" name="bot-field" />
