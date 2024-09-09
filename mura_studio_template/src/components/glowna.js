@@ -33,7 +33,7 @@ const Glowna = () => {
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: glownaRef.current,
-          start: "top",
+          start: "top -20%",
           end: "bottom top",
           scrub: true,
         }

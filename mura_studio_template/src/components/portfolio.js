@@ -41,7 +41,7 @@ const Portfolio = () => {
         scrollTrigger: {
           trigger: portfolioRef.current,
           start: "bottom 60%",
-          end: "bottom 30%",
+          end: "bottom 10%",
           scrub: true,
         }
       });

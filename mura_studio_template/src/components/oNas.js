@@ -53,8 +53,8 @@ const ONas = () => {
       gsap.timeline({
         scrollTrigger: {
           trigger: leftImageRef.current,
-          start: "top 180%",
-          end: "top 80%",
+          start: "top 150%",
+          end: "top 75%",
           scrub: true, 
         }
       })
@@ -74,7 +74,7 @@ const ONas = () => {
         scrollTrigger: {
           trigger: oNasRef.current,
           start: "bottom 30%",
-          end: "bottom 10%",
+          end: "bottom 5%",
           scrub: true,
         }
       });
@@ -151,8 +151,8 @@ const ONas = () => {
           </div>
           </div>
         </div>
-        <p className="font-body text-body-lg text-center font-light text-neutral-700 mt-5">
-          Przy realizacji inwestycji budowlanych współpracujemy ze stałym zespółem zaufanych branżystów z zakresu instalacji sanitarnych, instalacji elektrycznych oraz konstrukcji. Dzięki temu jesteśmy w stanie dostarczyć Państwu projekty wielobranżowe na wysokim poziomie dopracowania.
+        <p className="font-body text-body-lg text-center font-light text-neutral-700 mt-5 mb-10">
+          Przy realizacji inwestycji budowlanych współpracujemy ze stałym zespołem zaufanych branżystów z zakresu instalacji sanitarnych, instalacji elektrycznych oraz konstrukcji. Dzięki temu jesteśmy w stanie dostarczyć Państwu projekty wielobranżowe na wysokim poziomie dopracowania.
         </p>
         <Karuzela />
       </div>
