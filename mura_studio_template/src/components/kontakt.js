@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
+import Formularz from "./formularz";
+
 const Kontakt = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -44,8 +46,8 @@ const Kontakt = () => {
   return (
     <div id="#kontakt" className="container mx-auto p-5 overflow-hidden">
       <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-12">
-        <div className="lg:col-span-6 md:pr-24">
-          <h3 className="font-display md:text-display-lg text-display-sm font-normal pb-4">
+        <div className="lg:col-span-6 m-auto w-3/4">
+          {/* <h3 className="font-display md:text-display-lg text-display-sm font-normal pb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </h3>
           <a
@@ -53,7 +55,8 @@ const Kontakt = () => {
             className="font-display md:text-display-lg text-display-sm italic text-primary-600 underline"
           >
             Lorem ipsum dolor
-          </a>
+          </a> */}
+          <Formularz />
         </div>
         <div className="lg:col-span-6 mt-2 flex flex-col gap-8 xl:pl-80 lg:pl-48">
           <div
@@ -61,8 +64,8 @@ const Kontakt = () => {
               hasAnimated ? "translate-x-0 opacity-100 delay-200" : "translate-x-full opacity-0"
             }`}
           >
-            <p className="text-display-xs font-display font-normal text-neutral-700">
-              44-144 Żernica,<br />ul. Brzozowa 3a
+            <p className="text-display-xs text-right font-display font-normal text-neutral-700">
+              ul. Brzozowa 3a<br />44-144 Żernica k. Gliwic
             </p>
           </div>
             <div
@@ -71,7 +74,7 @@ const Kontakt = () => {
               }`}
             >
             <a
-              className="text-display-xs font-display font-normal text-primary-600 hover:text-neutral-700"
+              className="text-display-xs text-right font-display font-normal text-primary-600 hover:text-neutral-700"
               href="mailto:biuro@murastudio.pl"
             >
               biuro@murastudio.pl
@@ -83,7 +86,7 @@ const Kontakt = () => {
             }`}
           >
             <a
-              className="text-display-xs font-display font-normal text-primary-600 hover:text-neutral-700"
+              className="text-display-xs text-right font-display font-normal text-primary-600 hover:text-neutral-700"
               href="tel:+48795504238"
             >
               +48 795 504 238
@@ -94,7 +97,7 @@ const Kontakt = () => {
               hasAnimated ? "translate-x-0 opacity-100 delay-700" : "translate-x-full opacity-0"
             }`
           }>
-            <div className="flex flex-row items-center gap-6 mt-5">
+            <div className="flex flex-row justify-end items-center gap-6 mt-5">
               {data.allSocialJson.nodes.map((node) => (
                 <a
                   href={node.href}
