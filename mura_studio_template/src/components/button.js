@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Button = ({ label, link, size, icon }) => (
-  <a
-    className={`button flex gap-1 items-center justify-center bg-primary-600 text-white font-semibold  ${
+const Button = ({ label, link, size, icon, type }) => (
+  <button
+    className={`button flex gap-1 items-center justify-center bg-primary-600 text-white font-semibold rounded-sm  ${
       size === "lg" ? "px-6 py-4 text-body-sm" : "px-5 py-3 text-body-xs"
     }`}
-    href={link}>
+    href={link}
+    type={type}
+  >
     {label}
     {icon === true ? (
       <svg
@@ -33,13 +35,14 @@ const Button = ({ label, link, size, icon }) => (
     ) : (
       ""
     )}
-  </a>
+  </button>
 );
 
 Button.propTypes = {
   label: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
   size: PropTypes.string,
+  type: PropTypes.string,
   icon: PropTypes.bool,
 };
 
