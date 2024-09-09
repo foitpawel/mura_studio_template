@@ -7,7 +7,25 @@ const Karuzela = () => {
 
   const data = useStaticQuery(graphql`
     {
+      GrafLogo: file(relativePath: { eq: "logos/GrafLogo.png" }) {
+        childImageSharp {
+          gatsbyImageData(
+            width: 170
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
+      }
       image: file(relativePath: { eq: "logos/mura.jpeg" }) {
+        childImageSharp {
+          gatsbyImageData(
+            width: 170
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
+      }
+      MediumSquareLogo: file(relativePath: { eq: "logos/MediumSquareLogo.png" }) {
         childImageSharp {
           gatsbyImageData(
             width: 170
@@ -48,14 +66,14 @@ const Karuzela = () => {
           className="flex w-[200%] animate-marquee"
         >
           <div className="flex w-[50%]">
-            <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 1" />
-            <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 2" />
+            <GatsbyImage className="mx-auto" image={getImage(data.GrafLogo)} alt="Logo 1" />
+            <GatsbyImage className="mx-auto" image={getImage(data.MediumSquareLogo)} alt="Logo 2" />
             <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 3" />
             <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 4" />
           </div>
           <div className="flex w-[50%]">
-            <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 5" />
-            <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 6" />
+            <GatsbyImage className="mx-auto" image={getImage(data.GrafLogo)} alt="Logo 5" />
+            <GatsbyImage className="mx-auto" image={getImage(data.MediumSquareLogo)} alt="Logo 6" />
             <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 7" />
             <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 8" />
           </div>
