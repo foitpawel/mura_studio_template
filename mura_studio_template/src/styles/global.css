@@ -9,6 +9,10 @@
     body {
       @apply font-body font-light text-neutral-900 lining-nums;
     }
+    input,
+    textarea {
+      @apply focus:outline-none focus:border-none resize-none;
+    }
   }
 }
 
