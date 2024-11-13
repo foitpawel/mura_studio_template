@@ -16,10 +16,11 @@ const Karuzela = () => {
           )
         }
       }
-      image: file(relativePath: { eq: "logos/mura.jpeg" }) {
+
+      JacekJamrozLogo: file(relativePath: { eq: "logos/JacekJamrozLogo.png" }) {
         childImageSharp {
           gatsbyImageData(
-            width: 170
+            width: 500
             placeholder: BLURRED
             formats: [AUTO, WEBP, AVIF]
           )
@@ -68,14 +69,12 @@ const Karuzela = () => {
           <div className="flex w-[50%]">
             <GatsbyImage className="mx-auto" image={getImage(data.GrafLogo)} alt="Logo 1" />
             <GatsbyImage className="mx-auto" image={getImage(data.MediumSquareLogo)} alt="Logo 2" />
-            <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 3" />
-            <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 4" />
+            <GatsbyImage className="mx-auto" image={getImage(data.JacekJamrozLogo)} alt="Logo 3" />
           </div>
           <div className="flex w-[50%]">
             <GatsbyImage className="mx-auto" image={getImage(data.GrafLogo)} alt="Logo 5" />
             <GatsbyImage className="mx-auto" image={getImage(data.MediumSquareLogo)} alt="Logo 6" />
-            <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 7" />
-            <GatsbyImage className="mx-auto" image={getImage(data.image)} alt="Logo 8" />
+            <GatsbyImage className="mx-auto" image={getImage(data.JacekJamrozLogo)} alt="Logo 7" />
           </div>
         </div>
       </div>
