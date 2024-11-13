@@ -1,13 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Button = ({ label, link, size, icon, type }) => (
+const Button = ({ disabled, onClick, label, link, size, icon, type, variant }) => (
   <button
-    className={`button flex gap-1 items-center justify-center bg-primary-600 text-white font-semibold rounded-sm  ${
-      size === "lg" ? "px-6 py-4 text-body-sm" : "px-5 py-3 text-body-xs"
-    }`}
+    className={`button flex gap-1 items-center justify-center
+      ${variant === 'outlined' ? `border border-primary-600` : 'border-none'}
+      cursor-pointer
+      font-bold
+      ${['outlined', 'text'].includes(variant) ? 'bg-none' : 'bg-primary-600'}
+      ${variant === 'text' ? 'text-neutral-500' : 
+      variant === 'outlined' ? 'text-primary600' : 'text-white'}
+      font-semibold rounded-sm
+      ${size === "lg" ? "px-6 py-4 text-body-sm" : "px-5 py-3 text-body-xs"}`
+    }
     href={link}
     type={type}
+    onClick={onClick}
+    disabled={disabled}
   >
     {label}
     {icon === true ? (
