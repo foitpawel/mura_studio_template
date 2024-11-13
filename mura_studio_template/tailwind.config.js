@@ -18,6 +18,7 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       white: "#FFFFFF",
+      red: "#800000",
       black: "#000000",
       primary: {
         600: "#996830",
@@ -31,6 +32,7 @@ module.exports = {
         300: "#D9D9D6",
         100: "#E5E5E5",
       },
+      gradient: "linear-gradient(180deg, rgba(153,104,48,1) 34%, rgba(255,255,255,1) 100%)",
     },
     fontFamily: {
       display: ["Playfair Display", "sans-serif"],
