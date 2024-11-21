@@ -125,7 +125,7 @@ const ONas = () => {
         <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-20 items-center pt-10">
           <div className="lg:col-span-6 flex flex-col gap-6">
             <Naglowek label="O NAS" />
-            <h2 className="font-display xl:text-display-lg text-display-md">
+            <h2 className="font-body xl:text-display-lg text-display-md">
                 Mura studio zajmuje się  <span className="italic">projektowaniem obiektów</span>{" "} kubaturowych,
             </h2>
             <p className="font-body text-body-lg font-light text-neutral-700">
