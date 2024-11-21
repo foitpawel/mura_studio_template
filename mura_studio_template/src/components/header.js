@@ -94,7 +94,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-body-sm font-medium text-primary-600 hover:text-neutral-700 px-4 cursor-pointer"
+                className="text-body-sm font-medium text-primary-600 hover:text-primary-300 px-4 cursor-pointer"
                 to="#kontakt"
               >
                 Kontakt
