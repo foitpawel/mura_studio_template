@@ -49,7 +49,7 @@ const Kontakt = () => {
         <div className="lg:col-span-6 m-auto w-3/4">
           <div
             className={`bg-white rounded-lg shadow-lg p-6 transition-all duration-500 transform ${
-              hasAnimated ? "translate-x-0 opacity-100 delay-300" : "-translate-x-full opacity-0"
+              hasAnimated ? "translate-x-0 opacity-100 delay-100" : "-translate-x-full opacity-0"
             }`}
           >
             <Formularz />
