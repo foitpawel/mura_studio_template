@@ -47,7 +47,13 @@ const Kontakt = () => {
     <div id="#kontakt" className="container mx-auto p-5 overflow-hidden">
       <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-12">
         <div className="lg:col-span-6 m-auto w-3/4">
-          <Formularz />
+          <div
+            className={`bg-white rounded-lg shadow-lg p-6 transition-all duration-500 transform ${
+              hasAnimated ? "translate-x-0 opacity-100 delay-300" : "-translate-x-full opacity-0"
+            }`}
+          >
+            <Formularz />
+          </div>
         </div>
         <div className="lg:col-span-6 mt-2 flex flex-col gap-8 xl:pl-80 lg:pl-48">
           <div
@@ -55,7 +61,7 @@ const Kontakt = () => {
               hasAnimated ? "translate-x-0 opacity-100 delay-200" : "translate-x-full opacity-0"
             }`}
           >
-            <p className="text-display-xs font-display font-normal text-neutral-700">
+            <p className="font-body text-body-lg text-display-xs text-neutral-700">
               ul. Brzozowa 3a<br />44-144 Żernica k. Gliwic
             </p>
           </div>
@@ -65,7 +71,7 @@ const Kontakt = () => {
               }`}
             >
             <a
-              className="text-display-xs font-display font-normal text-primary-600 hover:text-neutral-700"
+              className="text-display-xs font-body text-body-lg text-primary-600 hover:text-neutral-700"
               href="mailto:biuro@murastudio.pl"
             >
               biuro@murastudio.pl
@@ -77,7 +83,7 @@ const Kontakt = () => {
             }`}
           >
             <a
-              className="text-display-xs font-display font-normal text-primary-600 hover:text-neutral-700"
+              className="text-display-xs font-body text-body-lg text-primary-600 hover:text-neutral-700"
               href="tel:+48795504238"
             >
               +48 795 504 238
