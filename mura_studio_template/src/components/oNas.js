@@ -128,12 +128,12 @@ const ONas = () => {
             <h2 className="font-body xl:text-display-lg text-display-md">
                 Mura studio zajmuje się  <span className="italic">projektowaniem obiektów</span>{" "} kubaturowych,
             </h2>
-            <p className="font-body text-body-lg font-light text-neutral-700">
+            <p className="font-body text-body-lg text-center font-light text-neutral-700">
               ale również aranżacją wnętrz oraz grafiką i tworzeniem multimediów.
               Nie boimy się nowych wyzwań. Nasze projekty charakteryzują się
               indywidualnym podejściem oraz dbałością o każdy szczegół.
             </p>
-            <p className="font-body text-body-lg font-light text-neutral-700">
+            <p className="font-body text-body-lg text-center font-light text-neutral-700">
               Najważniejszym etapem pracy jest poznanie potrzeb klienta i
               konsekwentne budowanie projektu z troską zarówno o jego wartości
               techniczne jak i estetyczne - materiał, światło, kolor.
