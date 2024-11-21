@@ -80,22 +80,12 @@ const Uslugi = () => {
     <div id="#uslugi" ref={serviceRef}>
       <div className="container mx-auto">
         <div className="flex flex-col md:gap-20 gap-10 lg:pt-28 md:pt-24 pt-12">
-          <div className="grid lg:grid-cols-12 grid-cols-1 gap-8">
+          <div className="grid lg:grid-cols-14 grid-cols-1 gap-8">
             <div className="lg:col-span-10">
               <Naglowek label="USŁUGI" />
-              <h2 className="lg:w-3/5 font-display xl:text-display-lg text-display-md pt-5">
-                Naszą misją jest {" "}<span className="italic">tworzenie kompleksowych projektów </span>
+              <h2 className="lg:w-4/5 font-body xl:text-display-lg text-display-md pt-5">
+                Naszą misją jest {" "}<span className="italic">tworzenie kompleksowych projektów z zakresu architektury kubaturowej oraz wnętrz, </span> które spełnią oczekiwania nawet najbardziej wymagających inwestorów.<br/> W skład zakresu naszych usług wchodzą:
               </h2>
-              <div className="mt-5">
-                <a className="font-display text-neutral-700 md:text-display-xxs text-display-xs">
-                  z zakresu architektury kubaturowej oraz wnętrz, które spełnią oczekiwania nawet najbardziej wymagających inwestorów.
-                </a>
-              </div>
-              <div className="mt-5">
-                <a className="font-display text-neutral-700 md:text-display-xxs text-display-xs">
-                  W skład zakresu naszych usług wchodzą:
-                </a>
-              </div>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:w-3/4 md:w-3/4 w-3/4 justify-center mx-auto">
