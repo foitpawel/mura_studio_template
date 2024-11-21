@@ -46,7 +46,7 @@ const Formularz = () => {
       action="/successScreen/"
       className="flex flex-col grid gap-2"
     >
-      <h3 className="mb-4">Formularz kontaktowy</h3>
+      <h2 className="mb-4 text-primary-600 font-body text-body-lg">Formularz kontaktowy</h2>
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="contact" />
       <input type="text" name="name" id="name" 
@@ -56,7 +56,7 @@ const Formularz = () => {
         onInput={handleInput}
         placeholder="Imię" 
         title="Podaj swoje imię"
-        className="placeholder-primary-600 focus:placeholder-primary-300 pb-1.5 border-b-2 border-primary-600" 
+        className="placeholder-primary-600 font-body text-body-base focus:placeholder-primary-300 pb-1.5 border-b-2 border-primary-600" 
         required 
       />
       <input type="email" name="email" id="email" 
@@ -66,7 +66,7 @@ const Formularz = () => {
         onInput={handleInput}
         placeholder="Adres e-mail"
         title="Podaj swój adres e-mail"
-        className="placeholder-primary-600 focus:placeholder-primary-300 mb-5 pb-1.5 border-b-2 border-primary-600" 
+        className="placeholder-primary-600 font-body text-body-base focus:placeholder-primary-300 mb-5 pb-1.5 border-b-2 border-primary-600" 
         required 
       />
       <textarea name="message" id="message" rows="5" 
@@ -76,7 +76,7 @@ const Formularz = () => {
         onInput={handleInput}
         placeholder="Wiadomość" 
         title="Napisz swoją wiadomość"
-        className="resize-non placeholder-primary-600 focus:placeholder-primary-300" 
+        className="resize-non placeholder-primary-600 font-body text-body-base focus:placeholder-primary-300" 
         required 
       />
       <div className="flex justify-end grid-row flex-row gap-2">
