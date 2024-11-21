@@ -8,7 +8,7 @@ const SuccessScreen = () => {
     <main className="container mx-auto">
       <div className="flex flex-col items-center text-center justify-center h-screen m-auto">
         <img src={Logo} alt="logo" className="w-1/4 mb-20" />
-        <h1 className="font-display lg:text-display-2xl md:text-display-xl text-display-md md:pb-4 pb-2">
+        <h1 className="font-body lg:text-display-2xl md:text-display-xl text-display-md md:pb-4 pb-2">
           Wiadomość została wysłana!
         </h1>
         <Button link="/" label="STRONA GŁOWNA" size="lg" icon={false} />
