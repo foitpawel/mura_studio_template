@@ -126,7 +126,7 @@ const ONas = () => {
           <div className="lg:col-span-6 flex flex-col gap-6">
             <Naglowek label="O NAS" />
             <h2 className="font-body xl:text-display-lg text-display-md">
-                Mura studio zajmuje się  <span className="italic">projektowaniem obiektów</span>{" "} kubaturowych,
+                Mura studio zajmuje się  <span className="text-primary-600">projektowaniem obiektów</span>{" "} kubaturowych,
             </h2>
             <p className="font-body text-body-lg text-center font-light text-neutral-700">
               ale również aranżacją wnętrz oraz grafiką i tworzeniem multimediów.

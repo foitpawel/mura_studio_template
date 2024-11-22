@@ -72,7 +72,7 @@ const Portfolio = () => {
               <div className="flex flex-col gap-6">
                 <Naglowek label="PORTFOLIO" />
                 <h3 className="md:text-display-lg text-display-md font-body pb-4">
-                  <span className="italic">Zapraszamy</span> do zapoznania się z naszymi wcześniejszymi pracami
+                  <span className="text-primary-600">Zapraszamy</span> do zapoznania się z naszymi wcześniejszymi pracami
                 </h3>
               </div>
               {data.allWorksJson.nodes

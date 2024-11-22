@@ -84,7 +84,7 @@ const Uslugi = () => {
             <div className="lg:col-span-10">
               <Naglowek label="USŁUGI" />
               <h2 className="lg:w-4/5 font-body xl:text-display-lg text-display-md pt-5">
-                Naszą misją jest {" "}<span className="italic">tworzenie kompleksowych projektów z zakresu architektury kubaturowej oraz wnętrz, </span> które spełnią oczekiwania nawet najbardziej wymagających inwestorów.<br/> W skład zakresu naszych usług wchodzą:
+                Naszą misją jest {" "}<span className="text-primary-600">tworzenie kompleksowych projektów z zakresu architektury kubaturowej oraz wnętrz, </span> które spełnią oczekiwania nawet najbardziej wymagających inwestorów.<br/> W skład zakresu naszych usług wchodzą:
               </h2>
             </div>
           </div>
