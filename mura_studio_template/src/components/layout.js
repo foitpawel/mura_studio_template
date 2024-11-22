@@ -8,7 +8,7 @@ import Footer from "./footer";
 const Layout = ({ children }) => {
   const title = "Mura studio";
   const description = "Projekty budynków i wnętrz";
-  const image = "https://murastudio.netlify.app/static/OpenGl-06ed6f16cdf48a64b1f791940ee1b9cc.png";
+  const image = "https://murastudio.netlify.app/static/OpenGl.png";
   const url = "https://murastudio.netlify.app";
 
   return (
