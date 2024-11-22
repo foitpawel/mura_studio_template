@@ -56,7 +56,7 @@ const Formularz = () => {
         onInput={handleInput}
         placeholder="Imię" 
         title="Podaj swoje imię"
-        className="placeholder-primary-600 font-body text-body-base focus:placeholder-primary-300 pb-1.5 border-b-2 border-primary-600" 
+        className="placeholder-primary-600 font-body text-body-base focus:placeholder-primary-300 mb-2 pb-1.5 border-b-2 border-primary-600" 
         required 
       />
       <input type="email" name="email" id="email" 
