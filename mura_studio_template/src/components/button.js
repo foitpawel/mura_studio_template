@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 
 const Button = ({ disabled, onClick, label, link, size, icon, type, variant }) => {
   const classes = `
@@ -15,7 +14,7 @@ const Button = ({ disabled, onClick, label, link, size, icon, type, variant }) =
 
   if (link && link.startsWith("/")) {
     return (
-      <Link to={link} className={classes} onClick={onClick} role="button">
+      <a to={link} className={classes} onClick={onClick} role="button">
         {label}
         {icon && (
           <svg
@@ -41,7 +40,7 @@ const Button = ({ disabled, onClick, label, link, size, icon, type, variant }) =
             />
           </svg>
         )}
-      </Link>
+      </a>
     );
   } else if (link) {
     return (
