@@ -37,3 +37,10 @@ input:-webkit-autofill {
 input:-webkit-autofill {
   transition: background-color 5000s ease-in-out 0s;
 }
+
+.autofill-border:-webkit-autofill,
+.autofill-border:autofill {
+  border-color: #996830;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #000000;
+}

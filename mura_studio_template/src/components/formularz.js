@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+
 import Button from "./button";
+import InputField from "./InputField";
 
 const genEmptyForm = () => ({
   name: '',
@@ -49,25 +51,21 @@ const Formularz = () => {
       <h2 className="mb-4 text-primary-600 font-body text-body-lg">Formularz kontaktowy</h2>
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="contact" />
-      <input type="text" name="name" id="name" 
-        value={values.name || ''} 
-        onChange={handleChangeValue('name')} 
-        onInvalid={handleInvalid}
-        onInput={handleInput}
-        placeholder="Imię" 
+      <InputField
+        type="text"
+        name="name"
+        value={values.name}
+        onChange={handleChangeValue("name")}
+        placeholder="Imię"
         title="Podaj swoje imię"
-        className="placeholder-primary-600 font-body text-body-base focus:placeholder-primary-300 mb-2 pb-1.5 border-b-2 border-primary-600" 
-        required 
       />
-      <input type="email" name="email" id="email" 
-        value={values.email || ''} 
-        onChange={handleChangeValue('email')} 
-        onInvalid={handleInvalid}
-        onInput={handleInput}
+      <InputField
+        type="email"
+        name="email"
+        value={values.email}
+        onChange={handleChangeValue("email")}
         placeholder="Adres e-mail"
         title="Podaj swój adres e-mail"
-        className="placeholder-primary-600 font-body text-body-base focus:placeholder-primary-300 mb-5 pb-1.5 border-b-2 border-primary-600" 
-        required 
       />
       <textarea name="message" id="message" rows="5" 
         value={values.message || ''} 
@@ -76,7 +74,7 @@ const Formularz = () => {
         onInput={handleInput}
         placeholder="Wiadomość" 
         title="Napisz swoją wiadomość"
-        className="resize-non placeholder-primary-600 font-body text-body-base focus:placeholder-primary-300" 
+        className="pt-2 resize-non placeholder-primary-600 font-body text-body-base focus:placeholder-primary-300" 
         required 
       />
       <div className="flex justify-end grid-row flex-row gap-2">
