@@ -36,7 +36,7 @@ const Header = () => {
     { name: "O nas", href: "#oNas" },
     { name: "Usługi", href: "#uslugi" },
     { name: "Portfolio", href: "#portfolio" },
-    { name: "Kontakt", href: "#kontakt" },
+    { name: "Kontakt", href: "kontakt" },
   ];
 
   useEffect(() => {
@@ -95,7 +95,7 @@ const Header = () => {
                 smooth={true}
                 duration={500}
                 className="text-body-sm font-medium text-primary-600 hover:text-primary-300 px-4 cursor-pointer"
-                to="#kontakt"
+                to="kontakt"
               >
                 Kontakt
               </Link>
