@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Usluga = ({ icon, title }) => {
   return (
-    <div className="relative w-full" style={{ paddingBottom: '100%' }}>
+    <button className="relative w-full" style={{ paddingBottom: '100%' }}>
       <div className="absolute inset-0 flex flex-col items-center justify-center hover:shadow-xl transition duration-200 p-8 border border-primary-100">
         <div className="mb-4">
           <img src={icon} width={48} height={48} alt={title} />
@@ -14,7 +14,7 @@ const Usluga = ({ icon, title }) => {
           </p>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 
