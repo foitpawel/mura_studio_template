@@ -2,15 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="mx-8">
-        <hr className="text-neutral-300" />
-        <div className="flex lg:flex-row flex lg:items-center mb-5">
-          <div className="text-body-md font-light flex items-center text-neutral-500 mt-5 mx-auto">
-            Copyright © {new Date().getFullYear()} Mura studio | Created by Pawel Foit
-          </div>
-        </div>
-      </div>
+    <footer className="flex mx-8 items-center justify-center text-center p-4 bg-gray-800 text-white border-t border-neutral-300">
+      <p className="text-sm md:text-base text-neutral-500 mx-auto">
+        Copyright © {new Date().getFullYear()} Mura studio | Created by Pawel Foit
+      </p>
     </footer>
   );
 };
