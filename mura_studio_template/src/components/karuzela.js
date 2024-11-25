@@ -60,8 +60,9 @@ const Karuzela = () => {
   return (
     <div className="flex flex-col md:gap-20 gap-10">
       <div className="relative overflow-hidden h-[200px] bg-white">
-        <div className="absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white/100 to-white/0 z-10 pointer-events-none"></div>
+        <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-white/100 to-white/0 z-10 pointer-events-none"></div>
+        
         <div
           ref={containerRef}
           className="flex w-[200%] animate-marquee"
@@ -81,5 +82,6 @@ const Karuzela = () => {
     </div>
   );
 };
+  
 
 export default Karuzela;
