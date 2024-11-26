@@ -29,7 +29,6 @@ const Kontakt = () => {
 
       const bounding = kontaktRef.current.getBoundingClientRect();
 
-      // Animacja uruchamia się, gdy górna część elementu jest w połowie widoczna
       if (bounding.top <= window.innerHeight * 0.75) {
         setHasAnimated(true);
         window.removeEventListener("scroll", handleScroll);
@@ -53,7 +52,7 @@ const Kontakt = () => {
               <Formularz />
             </div>
           </div>
-          <div className="lg:col-span-6 mt-2 flex flex-col gap-8 xl:pl-80 lg:pl-48">
+          <div className="lg:col-span-6 mt-2 flex flex-col gap-8 xl:pl-auto lg:pl-auto items-end text-right">
             <div
               className={`flex flex-col gap-2 mt-10 transition-all duration-500 transform ${
                 hasAnimated ? "translate-x-0 opacity-100 delay-200" : "translate-x-full opacity-0"
@@ -92,7 +91,7 @@ const Kontakt = () => {
                 hasAnimated ? "translate-x-0 opacity-100 delay-700" : "translate-x-full opacity-0"
               }`}
             >
-              <div className="flex flex-row items-center gap-6 mt-5">
+              <div className="flex flex-row items-center gap-6 mt-5 justify-end">
                 {data.allSocialJson.nodes.map((node) => (
                   <a
                     href={node.href}
