@@ -54,8 +54,8 @@ const Kontakt = () => {
         </div>
         <div className="lg:col-span-6 mt-2 flex flex-col gap-8 xl:pl-auto lg:pl-auto items-end text-right">
           <div
-            className={`flex flex-col gap-2 mt-10 transition-all duration-500 transform ${
-              hasAnimated ? "translate-x-0 opacity-100 delay-200" : "translate-x-full opacity-0"
+            className={`flex flex-col gap-2 mt-10 transition-all duration-500 transform origin-right ${
+              hasAnimated ? "translate-x-0 opacity-100 delay-200" : "translate-x-10 opacity-0"
             }`}
           >
             <p className="font-body text-body-lg text-display-xs text-neutral-700">
@@ -63,8 +63,8 @@ const Kontakt = () => {
             </p>
           </div>
           <div
-            className={`flex flex-col gap-2 mt-2 transition-all duration-500 transform ${
-              hasAnimated ? "translate-x-0 opacity-100 delay-300" : "translate-x-full opacity-0"
+            className={`flex flex-col gap-2 mt-2 transition-all duration-500 transform origin-right ${
+              hasAnimated ? "translate-x-0 opacity-100 delay-300" : "translate-x-10 opacity-0"
             }`}
           >
             <a
@@ -75,8 +75,8 @@ const Kontakt = () => {
             </a>
           </div>
           <div
-            className={`flex flex-col gap-2 mt-2 transition-all duration-500 transform ${
-              hasAnimated ? "translate-x-0 opacity-100 delay-500" : "translate-x-full opacity-0"
+            className={`flex flex-col gap-2 mt-2 transition-all duration-500 transform origin-right ${
+              hasAnimated ? "translate-x-0 opacity-100 delay-500" : "translate-x-10 opacity-0"
             }`}
           >
             <a
