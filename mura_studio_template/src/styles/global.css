@@ -49,13 +49,3 @@ body.loading {
   overflow: hidden;
   pointer-events: none;
 }
-
-.text-right {
-  text-align: right !important;
-}
-
-@supports (-webkit-touch-callout: none) {
-  .text-right {
-    text-align: right;
-  }
-}
