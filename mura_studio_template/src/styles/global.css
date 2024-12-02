@@ -44,8 +44,3 @@ input:-webkit-autofill {
   transition: background-color 5000s ease-in-out 0s;
   -webkit-text-fill-color: #000000;
 }
-
-body.loading {
-  overflow: hidden;
-  pointer-events: none;
-}
