@@ -7,6 +7,8 @@ const SplashScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
+    document.body.classList.add("loading");
+
     const logoTimer = setTimeout(() => {
       setIsAnimatingLogo(false);
       setTimeout(() => {
@@ -16,11 +18,13 @@ const SplashScreen = () => {
 
     const hideSplashTimer = setTimeout(() => {
       setIsVisible(false);
+      document.body.classList.remove("loading");
     }, 2000);
 
     return () => {
       clearTimeout(logoTimer);
       clearTimeout(hideSplashTimer);
+      document.body.classList.remove("loading");
     };
   }, []);
 
@@ -30,7 +34,7 @@ const SplashScreen = () => {
 
   return (
     <div
-      className={`fixed inset-0 flex items-center justify-center transition-all duration-1000 bg-white z-50 ${
+      className={`fixed inset-0 flex items-center justify-center transition-all duration-1000 bg-white z-[9999] ${
         isAnimatingBackground ? "opacity-0 blur-xl scale-125" : "opacity-100 blur-0 scale-200"
       }`}
     >

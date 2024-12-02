@@ -10,15 +10,17 @@ import Seo from "../components/seo";
 import Uslugi from "../components/uslugi";
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SplashScreen />
-    <Seo />
-    <Glowna />
-    <ONas />
-    <Uslugi />
-    <Portfolio />
-    <Kontakt />
-  </Layout>
+    <Layout>
+      <Seo />
+      <Glowna />
+      <ONas />
+      <Uslugi />
+      <Portfolio />
+      <Kontakt />
+    </Layout>
+  </>
 );
 
 export default IndexPage;
