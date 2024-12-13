@@ -151,7 +151,7 @@ const ONas = () => {
           </div>
           </div>
         </div>
-        <p className="font-body text-body-lg text-center font-light text-neutral-700 mt-5 mb-10">
+        <p className="font-body text-body-lg text-center font-light text-neutral-700 mt-5 mb-12">
           Przy realizacji inwestycji budowlanych współpracujemy ze stałym zespołem zaufanych branżystów z zakresu instalacji sanitarnych, instalacji elektrycznych oraz konstrukcji. Dzięki temu jesteśmy w stanie dostarczyć Państwu projekty wielobranżowe na wysokim poziomie dopracowania.
         </p>
         <Karuzela />
