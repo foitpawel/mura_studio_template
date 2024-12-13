@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-const previewImage = "https://murastudio.netlify.app/static/OpenGl.jpg";
+const previewImage = "https://murastudio.netlify.app/images/OpenGl.jpg"
 
 function Seo({ lang, meta, title, description, image, url }) {
   const { site } = useStaticQuery(
