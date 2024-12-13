@@ -44,3 +44,10 @@ input:-webkit-autofill {
   transition: background-color 5000s ease-in-out 0s;
   -webkit-text-fill-color: #000000;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+    background: inherit;
+  }
+}
